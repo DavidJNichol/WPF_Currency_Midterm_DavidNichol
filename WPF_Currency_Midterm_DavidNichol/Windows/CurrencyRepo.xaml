@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPF_Currency_Midterm_DavidNichol.Windows.CurrencyRepo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Currency_Midterm_DavidNichol.Windows"
+        mc:Ignorable="d"
+        Title="CurrencyRepo" Height="450" Width="465.211"
+        DataContext="CurrencyRepoViewModel" Loaded="Window_Loaded"
+        >
+    <Grid>
+        <TextBlock Margin="164,37,247,350">Total:</TextBlock>
+        <TextBlock Margin="226,37,191,360" RenderTransformOrigin="0.25,0.905" Text="{Binding Path= Total}" ></TextBlock>
+        <ComboBox Margin="10,104,304,274" ItemsSource="{Binding  Path=CoinsList}" SelectedItem="{Binding Path=SelectedCoin, Mode=TwoWay}"/>
+
+
+
+        <TextBox TextAlignment="Center" Margin="181,104,174,274" Text="{Binding Path=NumCoins}"></TextBox>
+        <Button Margin="316,104,41,274" RenderTransformOrigin="0.779,0.466" Command="{Binding AddToTotal}">Add Coin(s)</Button>
+        <Button Margin="181,303,174,76" Command="{Binding New}">New</Button>
+        <Button Margin="181,236,174,143" Command="{Binding Save}">Save</Button>
+        <Button Margin="181,172,174,207" Command="{Binding Load}">Load</Button>
+        <TextBlock Margin="212,76,199,315">Count</TextBlock>
+    </Grid>
+</Window>

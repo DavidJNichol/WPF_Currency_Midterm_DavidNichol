@@ -1,0 +1,9 @@
+﻿<Application x:Class="WPF_Currency_Midterm_DavidNichol.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF_Currency_Midterm_DavidNichol"
+             StartupUri="Windows/makechange.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
